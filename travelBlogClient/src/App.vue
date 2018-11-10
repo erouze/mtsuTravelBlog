@@ -1,14 +1,28 @@
 <template>
-  <div id="app">
+  <div id="app" style="margin: 0px;">
+    <app-header></app-header>
     <router-view/>
+    <tabs></tabs>
+    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
 
-export default {
-  name: 'App'
-}
+  import appHeader from './components/header.vue'
+  import appFooter from './components/footer.vue'
+  import tabs from './components/tabs.vue'
+
+  export default {
+    name: 'App',
+    components:{
+      'app-header': appHeader,
+      'app-footer': appFooter,
+      'tabs': tabs
+    },
+
+
+  }
 </script>
 
 <style>
