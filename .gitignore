@@ -1,0 +1,6 @@
+travelBlogClient/.idea
+travelBlogClient/dist
+travelBlogApi/.idea
+travelBlogApi/node_modules
+travelBlogClient/node_modules
+.idea

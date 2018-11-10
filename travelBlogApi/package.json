@@ -1,0 +1,21 @@
+{
+  "name": "travelblogapi",
+  "version": "1.0.0",
+  "description": "mtsu travel blog website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rookery Baruch Elizabeth Rouze",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "flexbox": "0.0.3",
+    "fs": "0.0.1-security",
+    "mssql": "^4.1.0",
+    "node-dev": "^3.1.3",
+    "swagger-ui-express": "^3.0.10"
+  }
+}
