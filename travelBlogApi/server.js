@@ -56,7 +56,7 @@ fs.readdirSync('./controllers').forEach(function (file) {
     }
 });
 
-var PORT = process.env.PORT || 3003;
+var PORT = 3005;
 app.listen(PORT, function () {
     console.log('Server listening on ' + PORT);
 
