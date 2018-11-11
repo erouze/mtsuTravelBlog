@@ -1,18 +1,23 @@
 <template>
   <div class="colorHeader" name="infoTitle" style="display: flex; width: 100%">
-    <div class="fontTitle">MT Travel Blog</div>
-    <div class="alignIcon">
-      <!--<router-link to="/ctac/" >-->
-        <i class="fa fa-home fa-2x fa-fw icon tooltip">
-          <span class="tooltiptext">Home</span>
-        </i>
-      <!--</router-link>-->
+    <div class="picture1">
+      <div style="width: 90%; margin-left: auto; margin-right: auto; display: flex; justify-content: space-between">
+        <img class="ourLogo" src="../../static/MTTravelBlogLogo.png">
+        <div style="display:flex; flex-direction: row;">
+          <div style="display: flex; flex-direction: column; height: 60px;">
+            <a href="#">Sign In/Sign up</a>
+            <a href="#">My Account</a>
+          </div>
+          <img class="mtsuLogo" src="../../static/MTSU_logo.gif">
+
+        </div>
+      </div>
     </div>
+
 
 
   </div>
 </template>
-
 <script>
 
   export default {
@@ -23,6 +28,32 @@
 </script>
 
 <style scoped >
+  a{
+    display: flex;
+    position: relative;
+  }
+  .picture1{
+    height: 60px;
+    width: 100%;
+  }
+
+  img.ourLogo {
+    /*margin-left: 0px;*/
+    display: block;
+    /*margin-left: 50px;*/
+    width: 50%;
+    max-height: 50px;
+  }
+
+
+  img.mtsuLogo {
+    /*margin-left: 0px;*/
+    display: block;
+    /*margin-left: 50px;*/
+    width: 100px;
+    max-height: 50px;
+    margin-top: 5px;
+  }
 
   .name {
     margin-left: auto;
