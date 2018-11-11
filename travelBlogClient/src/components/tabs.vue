@@ -1,12 +1,11 @@
 <template>
   <div class="tab">
     <div style="display: flex; flex-direction: row;">
-      <div style="display: flex; flex-direction: column;">
+      <div style="display: flex; flex-direction: column; margin: 10px; width: 25%;">
 
-        <side-buttons v-for="item in buttonNames" :name="item"></side-buttons>
+        <side-buttons style="margin-top: 5px;" v-for="item in buttonNames" :name="item"></side-buttons>
       </div>
-      <div style="margin-top: 20px; padding-top: 20px; margin-left: 20px;
-      margin-right: 20px;">
+      <div style="padding-top: 20px; width: 50%; margin: 10px; overflow-y: auto;">
         <h3>Welcome to MT TravelBlog!</h3>
         <p>
           This site was created to give students preparing to study, work,
@@ -25,6 +24,7 @@
           to see if yours is on the list!
         </p>
       </div>
+      <calendar-section style="width: 25%; height: 495px; margin: 10px;"></calendar-section>
     </div>
 
 
@@ -35,6 +35,7 @@
 <script>
 
   import SideButtons from "./sideButtons";
+  import calendarSection from './calendarSection'
   export default {
     name: 'tabs',
     data() {
@@ -44,7 +45,10 @@
         'Other Funding', 'Code of Conduct', 'Help']
       }
     },
-    components: {SideButtons},
+    components: {
+      SideButtons,
+      'calendar-section': calendarSection
+    },
   };
 </script>
 
@@ -54,7 +58,7 @@
   }
   .tab{
     width: 90%;
-    height: 510px;
+    height: 515px;
     background-color: white;
     opacity: 0.8;
     margin-left: auto;
