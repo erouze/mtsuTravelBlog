@@ -26,6 +26,7 @@
     bottom: 0;
     width: 100%;
     background-color: rgb(16,96,140);
+    opacity: 0.8;
 
   }
 
