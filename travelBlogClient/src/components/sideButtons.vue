@@ -1,5 +1,5 @@
 <template>
-  <div class="button">
+  <div class="button" :id="name" @click="handleClickButton">
     <div style="display: inline-block; margin-top: 22px;">{{name}}</div>
   </div>
 </template>
@@ -11,7 +11,18 @@
 
     props:[
       'name'
-    ]
+    ],
+    methods:{
+      handleClickButton(){
+        this.$emit('clicked', this.name)
+        var buttons = document.getElementsByClassName('button')
+        for(var i = 0; i < buttons.length; i++){
+          buttons[i].style.boxShadow = '5px 0px 5px 0px rgb(16,96,140)'
+        }
+
+        document.getElementById(this.name).style.boxShadow = '10px 5px rgb(16,96,140)'
+      }
+    }
   };
 </script>
 

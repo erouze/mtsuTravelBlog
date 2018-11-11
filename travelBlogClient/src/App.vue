@@ -2,15 +2,14 @@
   <div id="app" style="margin: 0px;">
     <app-header></app-header>
     <router-view/>
-    <tabs style="margin-top: 10px;"></tabs>
     <app-footer></app-footer>
   </div>
 </template>
 
 <script>
 
-  import appHeader from './components/header.vue'
-  import appFooter from './components/footer.vue'
+  import appHeader from './components/common/header.vue'
+  import appFooter from './components/common/footer.vue'
   import tabs from './components/tabs.vue'
 
   export default {
