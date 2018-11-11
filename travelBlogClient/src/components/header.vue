@@ -4,10 +4,16 @@
       <div style="width: 90%; margin-left: auto; margin-right: auto; display: flex; justify-content: space-between">
         <img class="ourLogo" src="../../static/MTTravelBlogLogo.png">
         <div style="display:flex; flex-direction: row;">
-          <div style="display: flex; flex-direction: column; height: 60px;">
-            <a href="#">Sign In/Sign up</a>
-            <a href="#">My Account</a>
+          <div style="display: flex; flex-direction: column;">
+            <div style="margin-top: -20px; display: flex; flex-direction: column; height: 60px;">
+              <a href="#">Sign In/Sign up</a>
+            </div>
+            <div style="margin-top: -21px; display: flex;">
+              <a href="#">My Account</a>
+            </div>
+
           </div>
+
           <img class="mtsuLogo" src="../../static/MTSU_logo.gif">
 
         </div>
@@ -31,6 +37,7 @@
   a{
     display: flex;
     position: relative;
+    align-content: end;
   }
   .picture1{
     height: 60px;

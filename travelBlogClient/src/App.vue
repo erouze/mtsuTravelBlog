@@ -2,7 +2,7 @@
   <div id="app" style="margin: 0px;">
     <app-header></app-header>
     <router-view/>
-    <tabs></tabs>
+    <tabs style="margin-top: 10px;"></tabs>
     <app-footer></app-footer>
   </div>
 </template>
